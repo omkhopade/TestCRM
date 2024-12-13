@@ -13,8 +13,9 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
+			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -23,13 +24,19 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="G:/Selenium/Drivers/JarFiles/ant-1.7.0.jar"/>
-	<classpathentry kind="lib" path="G:/Selenium/Drivers/JarFiles/ant-launcher-1.7.0.jar"/>
-	<classpathentry kind="lib" path="G:/Selenium/Drivers/JarFiles/bsh-2.0b4.jar"/>
-	<classpathentry kind="lib" path="G:/Selenium/Drivers/JarFiles/hamcrest-core-1.1.jar"/>
-	<classpathentry kind="lib" path="G:/Selenium/Drivers/JarFiles/jcommander-1.48.jar"/>
-	<classpathentry kind="lib" path="G:/Selenium/Drivers/JarFiles/junit-4.10.jar"/>
-	<classpathentry kind="lib" path="G:/Selenium/Drivers/JarFiles/snakeyaml-1.15.jar"/>
-	<classpathentry kind="lib" path="G:/Selenium/Drivers/JarFiles/testng-6.9.9.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

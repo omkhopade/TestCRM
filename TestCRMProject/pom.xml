@@ -37,11 +37,16 @@
     <version>2.7</version>
 </dependency>
     <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependency>
+ <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>4.1.0</version>
+    <version>5.9.2</version>
 </dependency>
+<dependency>    
+ <groupId>com.apple</groupId>     
+ <artifactId>AppleJavaExtensions</artifactId>     
+ <version>1.4</version> 
+ </dependency>
     
   </dependencies>
 </project>

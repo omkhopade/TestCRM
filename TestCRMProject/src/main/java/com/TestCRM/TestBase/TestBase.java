@@ -41,7 +41,7 @@ public class TestBase {
 		
 	}
 	
-	public static void installation()
+	public static void initilisation()
 	{
 		
 		if(pro.getProperty("browser").equalsIgnoreCase("chrome"))

@@ -10,7 +10,7 @@ import com.TestCRM.TestUtils.Timers;
 
 public class EditProfilePage  extends TestBase{
 	
-	@FindBy(xpath="//a[starts-with(text(),'Amruta')]")
+	@FindBy(xpath="//a[starts-with(text(),'John Joss Deo')]")
 	WebElement selectname;
 	
 	@FindBy(xpath="//button[@class='ui icon button']//i[@class='edit icon']")
