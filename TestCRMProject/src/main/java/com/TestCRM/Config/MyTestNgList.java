@@ -1,5 +1,6 @@
 package com.TestCRM.Config;
 
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import com.TestCRM.TestUtils.Timers;
@@ -22,6 +23,10 @@ public class MyTestNgList implements ITestListener{
 		
 		Timers.takeScreenShotsOnFailed();
 	    System.out.println("Failed test "+ result.getName());
+	  }
+	
+	public void onFinish(ITestContext context) {
+	   System.out.println(context.getName());
 	  }
 	
 }
