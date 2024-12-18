@@ -2,22 +2,27 @@ package com.TestCRM.Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import com.TestCRM.TestBase.TestBase;
+import com.TestCRM.TestUtils.Helper;
 import com.TestCRM.TestUtils.JavaScripts;
 import com.TestCRM.TestUtils.Timers;
 
 public class EditProfilePage  extends TestBase{
 	
-	@FindBy(xpath="//a[starts-with(text(),'John Joss Deo')]")
+	@FindBy(xpath="//a[starts-with(text(),'John')]")
 	WebElement selectname;
 	
 	@FindBy(xpath="//button[@class='ui icon button']//i[@class='edit icon']")
 	WebElement editprofile;
 	
-	@FindBy(name="middle_name")
+	@FindBy(xpath = "//input[@name='middle_name']")
 	WebElement middlename;
+	
+	@FindBy(xpath="//div[contains(text(),'Middle name(s)')]//parent :: div //div[2]")
+	WebElement MiddleNameVisibleText;
 	
 	@FindBy(xpath="//div[@name='company']//input")
 	WebElement company;
@@ -59,6 +64,7 @@ public class EditProfilePage  extends TestBase{
 	WebElement savebutton;
 	
 	
+	
 	public EditProfilePage()
 	{
 		PageFactory.initElements(driver, this);
@@ -70,7 +76,9 @@ public class EditProfilePage  extends TestBase{
 	{
 		selectname.click();
 		editprofile.click();
-		middlename.clear();
+		Helper.moveToElement(driver, MiddleNameVisibleText);
+		Helper.clearTextField(middlename);
+		Timers.smallStaticWait();
 		middlename.sendKeys("Akshay");
 		company.sendKeys("tcs");
 		tcs.click();

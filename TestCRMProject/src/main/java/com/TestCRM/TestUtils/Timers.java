@@ -27,11 +27,22 @@ public class Timers extends TestBase{
 		}
 	}
 	
-	public static void takeScreenShots()
+	public static void takeScreenShotsOnPass()
 	{
 		File src= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(src,  new File(".\\ScreenShots\\screenshots"+System.currentTimeMillis()+".png"));
+			FileUtils.copyFile(src,  new File(".\\ScreenShots\\screenshots"+"pass"+System.currentTimeMillis()+".png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public static void takeScreenShotsOnFailed()
+	{
+		File src= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(src,  new File(".\\ScreenShots\\screenshots"+"Failed"+System.currentTimeMillis()+".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

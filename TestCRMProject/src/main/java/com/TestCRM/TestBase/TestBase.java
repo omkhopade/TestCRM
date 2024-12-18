@@ -46,7 +46,9 @@ public class TestBase {
 		
 		if(pro.getProperty("browser").equalsIgnoreCase("chrome"))
 		{
-			WebDriverManager.chromedriver().setup();
+			
+			
+			WebDriverManager.chromedriver().driverVersion(pro.getProperty("browserversion")).setup();
 			driver= new ChromeDriver();
 			
 		}
