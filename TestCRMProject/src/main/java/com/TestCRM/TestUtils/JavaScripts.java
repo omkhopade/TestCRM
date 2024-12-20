@@ -14,4 +14,15 @@ public class JavaScripts extends TestBase {
 		js.executeScript("arguments[0].style.border='4px solid red'", element);
 	}
 	
+	
+	public static void clickElement(WebElement element)
+	{
+		js.executeScript("arguments[0].click()", element);
+	}
+	
+	public static void scrollTillElement(WebElement element)
+	{
+		js.executeScript("arguments[0].scrollIntoView()", element);
+	}
+	
 }

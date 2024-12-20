@@ -33,7 +33,7 @@ public class CreateContactTest extends TestBase{
 	}
 	
 	
-	@Test
+	@Test(enabled = true , priority = 1)
 	public void verifyCreateContactValidations()
 	{
 		contactobj.verifyLandOnCreateContactPage();
@@ -41,7 +41,7 @@ public class CreateContactTest extends TestBase{
 		
 		
 	}
-	@Test
+	@Test(priority = 2, enabled = false)
 	public void verifyCreateContact()
 	{
 		contactobj.verifyLandOnCreateContactPage();

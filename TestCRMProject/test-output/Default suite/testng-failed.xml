@@ -6,8 +6,8 @@
       <class name="com.Test.CreateContactTest">
         <methods>
           <include name="tearDown"/>
-          <include name="createContactTest"/>
           <include name="setUp"/>
+          <include name="verifyCreateContact"/>
         </methods>
       </class> <!-- com.Test.CreateContactTest -->
     </classes>

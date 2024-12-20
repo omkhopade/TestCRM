@@ -14,6 +14,7 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.xml.XmlSuite;
 
+import com.TestCRM.TestUtils.Helper;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -21,6 +22,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public class ExtentReporterNG implements IReporter  {
 	
 	private ExtentReports extent;
+
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
 			String outputDirectory) {
@@ -36,6 +38,8 @@ public class ExtentReporterNG implements IReporter  {
 				buildTestNodes(context.getPassedTests(), LogStatus.PASS);
 				buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
 				buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
+				
+					
 			}
 		}
 
@@ -49,9 +53,9 @@ public class ExtentReporterNG implements IReporter  {
 		if (tests.size() > 0) {
 			for (ITestResult result : tests.getAllResults()) {
 				test = extent.startTest(result.getMethod().getMethodName());
-
 				test.setStartedTime(getTime(result.getStartMillis()));
 				test.setEndedTime(getTime(result.getEndMillis()));
+				
 
 				for (String group : result.getMethod().getGroups())
 					test.assignCategory(group);
