@@ -7,13 +7,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Test.EditProfileTest">
+      <class name="com.Test.CreateContactTest">
         <methods>
-          <include name="tearoff"/>
-          <include name="verifyEditProfileTest"/>
+          <include name="verifyCreateContactValidations"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="verifyCreateContact"/>
         </methods>
-      </class> <!-- com.Test.EditProfileTest -->
+      </class> <!-- com.Test.CreateContactTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

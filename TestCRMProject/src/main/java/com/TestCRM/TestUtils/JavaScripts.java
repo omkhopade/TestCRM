@@ -7,7 +7,7 @@ import com.TestCRM.TestBase.TestBase;
 
 public class JavaScripts extends TestBase {
 
-	public static JavascriptExecutor js= ((JavascriptExecutor) driver);
+	//public static JavascriptExecutor js= ((JavascriptExecutor) driver);
 	
 	public static  void borderElement(WebElement element)
 	{

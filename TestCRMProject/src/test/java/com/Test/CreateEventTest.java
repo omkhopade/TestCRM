@@ -36,8 +36,8 @@ public class CreateEventTest extends TestBase {
 	{
 		
 		calender.verifyCreateEventPage();
-		
 	}
+	
 	@AfterMethod
 	public void tearDown()
 	{

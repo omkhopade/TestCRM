@@ -83,7 +83,6 @@ public class CalendarPage extends TestBase{
 			for(int j=1;j<=cell.size();j++)
 			{
 				String date=driver.findElement(By.xpath("//div[@class='react-datepicker__month']/div["+i+"]/div["+j+"]")).getText();
-				System.out.println(date);
 				if(date.equals("25"))
 				{
 					driver.findElement(By.xpath("//div[@class='react-datepicker__month']/div["+i+"]/div["+j+"]")).click();
@@ -120,7 +119,6 @@ public class CalendarPage extends TestBase{
 			for(int j=1;j<=cell.size();j++)
 			{
 				String date=driver.findElement(By.xpath("//div[@class='react-datepicker__month']/div["+i+"]/div["+j+"]")).getText();
-				System.out.println(date);
 				String endDate=Integer.toString(EndDate);
 				if(date.equals(endDate))
 				{
@@ -148,7 +146,7 @@ public class CalendarPage extends TestBase{
 				for(int j=1;j<=cell.size();j++)
 				{
 					String date=driver.findElement(By.xpath("//div[@class='react-datepicker__month']/div["+i+"]/div["+j+"]")).getText();
-					System.out.println(date);
+					
 					String endDate=Integer.toString(EndDate);
 					if(date.equals(endDate))
 					{

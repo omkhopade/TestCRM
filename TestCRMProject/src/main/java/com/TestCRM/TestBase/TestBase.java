@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,10 +20,12 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties pro;
+	public static JavascriptExecutor js;
 	
 	public TestBase()
 	{
 		pro = new Properties();
+		js = ((JavascriptExecutor) driver);
 		
 		FileInputStream file = null;
 		try {
