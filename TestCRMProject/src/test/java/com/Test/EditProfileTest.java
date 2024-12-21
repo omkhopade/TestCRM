@@ -29,7 +29,7 @@ public class EditProfileTest extends TestBase {
 		loginpage.verifyLogin();
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyEditProfileTest()
 	{
 		editprofile.updateProfile();

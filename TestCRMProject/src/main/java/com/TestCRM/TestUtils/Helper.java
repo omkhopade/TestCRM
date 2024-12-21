@@ -46,7 +46,7 @@ public class Helper  extends TestBase{
 	
 	public static void clickOnDropDown(List<WebElement> element, String value)
 	{
-		List<WebElement> list =element;
+		List<WebElement> list = element;
 		
 		for(int i=0;i<list.size();i++)
 		{
