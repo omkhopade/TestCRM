@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.TestCRM.Pages.CreateContact;
 import com.TestCRM.Pages.LoginPage;
 import com.TestCRM.TestBase.TestBase;
+import com.TestCRM.TestUtils.Logs;
 import com.TestCRM.TestUtils.Timers;
 
 public class CreateContactTest extends TestBase{
@@ -37,7 +38,9 @@ public class CreateContactTest extends TestBase{
 	public void verifyCreateContactValidations()
 	{
 		contactobj.verifyLandOnCreateContactPage();
+		Logs.runTimeInfo("info", "info");
 		contactobj.verifyvalidation();
+		Logs.runTimeInfo("info", "info");
 		
 		
 	}
@@ -45,7 +48,9 @@ public class CreateContactTest extends TestBase{
 	public void verifyCreateContact()
 	{
 		contactobj.verifyLandOnCreateContactPage();
+		Logs.runTimeInfo("info", "info");
 		contactobj.verifyCreateContact();
+		Logs.runTimeInfo("info", "info");
 		
 	}
 	

@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -66,8 +67,17 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(Timers.pageloadTimeOut, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get(pro.getProperty("url"));
-		
+		try {
+			driver.get(pro.getProperty("url"));
+		}
+		catch (org.openqa.selenium.TimeoutException e) {
+			
+			driver.get(pro.getProperty("url"));
+		}
+		catch (Exception e) {
+			
+			driver.quit();
+		}
 	
 	}
 	

@@ -2,60 +2,60 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-21T14:06:57 IST" name="Suite" finished-at="2024-12-21T14:09:04 IST" duration-ms="127181">
+  <suite started-at="2024-12-23T11:10:10 IST" name="Suite" finished-at="2024-12-23T11:13:09 IST" duration-ms="178234">
     <groups>
     </groups>
-    <test started-at="2024-12-21T14:06:57 IST" name="Test" finished-at="2024-12-21T14:09:04 IST" duration-ms="127181">
+    <test started-at="2024-12-23T11:10:10 IST" name="Test" finished-at="2024-12-23T11:13:09 IST" duration-ms="178234">
       <class name="com.Test.CreateEventTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.CreateEventTest@6ae5aa72]" started-at="2024-12-21T14:07:51 IST" name="setUp" finished-at="2024-12-21T14:08:00 IST" duration-ms="9231" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.CreateEventTest@5158b42f]" started-at="2024-12-23T11:11:59 IST" name="setUp" finished-at="2024-12-23T11:12:05 IST" duration-ms="6214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCreateContactValidations()[pri:1, instance:com.Test.CreateEventTest@6ae5aa72]" started-at="2024-12-21T14:08:00 IST" name="verifyCreateContactValidations" finished-at="2024-12-21T14:08:21 IST" duration-ms="20457" status="PASS">
+        <test-method signature="verifyCreateContactValidations()[pri:1, instance:com.Test.CreateEventTest@5158b42f]" started-at="2024-12-23T11:12:05 IST" name="verifyCreateContactValidations" finished-at="2024-12-23T11:12:26 IST" duration-ms="20619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateContactValidations -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.CreateEventTest@6ae5aa72]" started-at="2024-12-21T14:08:21 IST" name="tearDown" finished-at="2024-12-21T14:08:26 IST" duration-ms="5310" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.CreateEventTest@5158b42f]" started-at="2024-12-23T11:12:26 IST" name="tearDown" finished-at="2024-12-23T11:12:32 IST" duration-ms="5430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Test.CreateEventTest -->
       <class name="com.Test.EditProfileTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.EditProfileTest@222545dc]" started-at="2024-12-21T14:08:26 IST" name="setUp" finished-at="2024-12-21T14:08:33 IST" duration-ms="6496" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.EditProfileTest@595b007d]" started-at="2024-12-23T11:12:32 IST" name="setUp" finished-at="2024-12-23T11:12:38 IST" duration-ms="6202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyEditProfileTest()[pri:0, instance:com.Test.EditProfileTest@222545dc]" started-at="2024-12-21T14:08:33 IST" name="verifyEditProfileTest" finished-at="2024-12-21T14:08:58 IST" duration-ms="25812" status="PASS">
+        <test-method signature="verifyEditProfileTest()[pri:0, instance:com.Test.EditProfileTest@595b007d]" started-at="2024-12-23T11:12:38 IST" name="verifyEditProfileTest" finished-at="2024-12-23T11:13:03 IST" duration-ms="25127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEditProfileTest -->
-        <test-method is-config="true" signature="tearoff()[pri:0, instance:com.Test.EditProfileTest@222545dc]" started-at="2024-12-21T14:08:59 IST" name="tearoff" finished-at="2024-12-21T14:09:04 IST" duration-ms="5326" status="PASS">
+        <test-method is-config="true" signature="tearoff()[pri:0, instance:com.Test.EditProfileTest@595b007d]" started-at="2024-12-23T11:13:03 IST" name="tearoff" finished-at="2024-12-23T11:13:09 IST" duration-ms="5621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearoff -->
       </class> <!-- com.Test.EditProfileTest -->
       <class name="com.Test.CreateContactTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.CreateContactTest@5fdcaa40]" started-at="2024-12-21T14:06:57 IST" name="setUp" finished-at="2024-12-21T14:07:05 IST" duration-ms="8276" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.CreateContactTest@8dbdac1]" started-at="2024-12-23T11:10:10 IST" name="setUp" finished-at="2024-12-23T11:10:19 IST" duration-ms="8092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCreateContactValidations()[pri:1, instance:com.Test.CreateContactTest@5fdcaa40]" started-at="2024-12-21T14:07:05 IST" name="verifyCreateContactValidations" finished-at="2024-12-21T14:07:14 IST" duration-ms="9213" status="PASS">
+        <test-method signature="verifyCreateContactValidations()[pri:1, instance:com.Test.CreateContactTest@8dbdac1]" started-at="2024-12-23T11:10:19 IST" name="verifyCreateContactValidations" finished-at="2024-12-23T11:10:58 IST" duration-ms="39910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateContactValidations -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.CreateContactTest@5fdcaa40]" started-at="2024-12-21T14:07:14 IST" name="tearDown" finished-at="2024-12-21T14:07:20 IST" duration-ms="5302" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.CreateContactTest@8dbdac1]" started-at="2024-12-23T11:10:59 IST" name="tearDown" finished-at="2024-12-23T11:11:04 IST" duration-ms="5356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.CreateContactTest@5fdcaa40]" started-at="2024-12-21T14:07:20 IST" name="setUp" finished-at="2024-12-21T14:07:28 IST" duration-ms="8025" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.CreateContactTest@8dbdac1]" started-at="2024-12-23T11:11:04 IST" name="setUp" finished-at="2024-12-23T11:11:10 IST" duration-ms="6402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCreateContact()[pri:2, instance:com.Test.CreateContactTest@5fdcaa40]" started-at="2024-12-21T14:07:28 IST" name="verifyCreateContact" finished-at="2024-12-21T14:07:45 IST" duration-ms="17680" status="PASS">
+        <test-method signature="verifyCreateContact()[pri:2, instance:com.Test.CreateContactTest@8dbdac1]" started-at="2024-12-23T11:11:10 IST" name="verifyCreateContact" finished-at="2024-12-23T11:11:54 IST" duration-ms="43209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateContact -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.CreateContactTest@5fdcaa40]" started-at="2024-12-21T14:07:46 IST" name="tearDown" finished-at="2024-12-21T14:07:51 IST" duration-ms="5271" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.CreateContactTest@8dbdac1]" started-at="2024-12-23T11:11:54 IST" name="tearDown" finished-at="2024-12-23T11:11:59 IST" duration-ms="5357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
