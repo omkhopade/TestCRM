@@ -1,6 +1,5 @@
 package com.TestCRM.TestUtils;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import com.TestCRM.TestBase.TestBase;
@@ -22,7 +21,11 @@ public class JavaScripts extends TestBase {
 	
 	public static void scrollTillElement(WebElement element)
 	{
+		
 		js.executeScript("arguments[0].scrollIntoView()", element);
 	}
+	
+	
+
 	
 }

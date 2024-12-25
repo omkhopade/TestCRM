@@ -143,7 +143,7 @@ public class CreateContact extends TestBase{
 		JavaScripts.clickElement(country);
 		Helper.clickOnDropDown(countrylist,"Afghanistan");
 		JavaScripts.scrollTillElement(call);
-		JavaScripts.clickElement(call);
+		Helper.clickWebEelement(driver, call);
 		JavaScripts.scrollTillElement(image);
 		image.sendKeys("C:\\Users\\Admin\\Desktop\\win.JPG");
 		JavaScripts.scrollTillElement(Category);

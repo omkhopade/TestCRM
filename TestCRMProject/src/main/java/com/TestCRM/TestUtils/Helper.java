@@ -2,6 +2,8 @@ package com.TestCRM.TestUtils;
 
 import java.util.List;
 
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -18,8 +20,11 @@ public class Helper  extends TestBase{
 	
 	public static void moveToElement(WebDriver driver, WebElement element)
 	{
-		Actions action= new Actions(driver);
-		action.moveToElement(element);
+		
+			
+			Actions action= new Actions(driver);
+			action.moveToElement(element);
+	
 	}
 	
 	
@@ -32,8 +37,22 @@ public class Helper  extends TestBase{
 	
 	public static void clickWebEelement(WebDriver driver , WebElement element)
 	{
+		try {
+		
 		Actions action = new Actions(driver);
 		action.click(element).build().perform();
+		
+		}
+		
+		catch (ElementClickInterceptedException e)
+		{
+			System.out.println("Inside ElementClickInterceptedException catch block");
+			js.executeScript("arguments[0].click()",element);
+		}
+		
+
+	
+	
 	}
 	
 	

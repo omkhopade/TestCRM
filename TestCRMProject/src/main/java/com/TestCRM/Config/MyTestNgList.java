@@ -26,7 +26,7 @@ public class MyTestNgList implements ITestListener{
 	  }
 	
 	public void onFinish(ITestContext context) {
-	   System.out.println(context.getName());
+	   System.out.println("Method execution is done for : "+context.getName());
 	  }
 	
 }
