@@ -2,8 +2,8 @@ package com.TestCRM.TestUtils;
 
 import java.util.List;
 
+
 import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,8 +15,6 @@ import com.TestCRM.TestBase.TestBase;
 
 public class Helper  extends TestBase{
 
-	
-	
 	
 	public static void moveToElement(WebDriver driver, WebElement element)
 	{
@@ -87,6 +85,13 @@ public class Helper  extends TestBase{
 		
 		return base64;
 	}
+	
+	public static void refreshPage()
+
+	{
+		driver.navigate().refresh();
+	}
+	
 	
 	
 	

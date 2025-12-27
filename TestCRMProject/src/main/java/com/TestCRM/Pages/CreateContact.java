@@ -40,7 +40,6 @@ public class CreateContact extends TestBase{
 	@FindBy(xpath="//div[@name='company']/input")
 	 WebElement company;
 	
-	
 	@FindBy(xpath = "//input[@name='value' and @placeholder='Email address'] ")
 	 WebElement email;
 	

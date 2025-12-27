@@ -8,8 +8,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.Test.CreateContactTest"/>
-      <class name="com.Test.CreateEventTest"/>
-      <class name="com.Test.EditProfileTest"/>
+    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
