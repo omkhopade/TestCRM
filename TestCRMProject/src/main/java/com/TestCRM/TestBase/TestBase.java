@@ -52,7 +52,7 @@ public class TestBase {
 		{
 			
 			
-			WebDriverManager.chromedriver().driverVersion(pro.getProperty("browserversion")).setup();
+			WebDriverManager.chromedriver().setup();
 			driver= new ChromeDriver();
 			
 		}
